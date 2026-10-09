@@ -10,17 +10,11 @@ exclude = [
   # Placeholder URLs in templates and examples
   "example\\.com",
   "<your-",
-  # Template placeholders. The docs/ templates ship with unfilled links (<PROJECT>,
-  # NNNN-<slug>.md, YYYY-MM-DD-<topic>-design.md) so a reader can see the intended shape.
-  # They resolve once a real repo fills them in; until then they are not link rot.
-  "<PROJECT>",
-  "<topic>",
-  "<slug>",
-  "<name>",
-  "<file>",
-  "<kebab-title>",
-  "NNNN-",
-  "YYYY-MM-DD-",
+  # NOTE: `exclude` matches URLs only -- it does NOT apply to local file paths, which lychee
+  # resolves as file:// links and checks regardless. So placeholder paths in the docs/
+  # templates cannot be excluded here: they are written as inline code (`<file>.md`) rather
+  # than as markdown links, which keeps the intended shape visible to a reader while giving
+  # the link checker nothing unresolvable to chase. Fill them in as real links as you go.
   # GitHub edit/blame URLs that require authentication
   "github\\.com/.*/edit/",
   # Avoid rate-limiting from high-traffic sites

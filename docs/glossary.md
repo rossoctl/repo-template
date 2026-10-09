@@ -9,7 +9,7 @@ Keep entries short — one or two sentences, linking the spec that defines the t
 ## <PROJECT> terms
 
 **<term>** — <definition in one sentence.> See
-[`specs/<file>.md`](specs/<file>.md).
+`specs/<file>.md`.
 
 **<term>** — <definition.> Not to be confused with <neighbouring term>, which is
 <distinction>.

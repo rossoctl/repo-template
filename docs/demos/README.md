@@ -8,7 +8,7 @@ being performed live in front of an audience.
 
 | Demo                                 | Shows                                  | Time    |
 | ------------------------------------ | -------------------------------------- | ------- |
-| [`<name>-demo.md`](<name>-demo.md)   | <the claim, in one line>               | ~10 min |
+| `<name>-demo.md`                     | <the claim, in one line>               | ~10 min |
 
 <!-- One row per demo. The "Shows" cell is the claim, not the topic: a reader decides from
      this table alone whether this is the demo they want. -->

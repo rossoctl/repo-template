@@ -9,7 +9,7 @@ document goes.
 
 | If you want to…                                      | Read                                                 |
 | ---------------------------------------------------- | ---------------------------------------------------- |
-| Understand the whole system in one sitting           | [`<PROJECT>-overview.md`](<PROJECT>-overview.md)     |
+| Understand the whole system in one sitting           | `<PROJECT>-overview.md`                              |
 | Know **why** a decision was made                     | [`adrs/`](adrs/) — one decision per file, permanent  |
 | Get the **full design** of a subsystem               | [`specs/`](specs/) — deep dives, living              |
 | Know what a phase **actually built and measured**    | [`reports/`](reports/) — append-only, never rewritten |

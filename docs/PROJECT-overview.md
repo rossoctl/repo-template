@@ -37,7 +37,7 @@ one screen — this is the orientation diagram, not the complete one. Detail liv
 
 | Component     | Role                      | Spec                                       |
 | ------------- | ------------------------- | ------------------------------------------ |
-| **<name>**    | <one line>                | [`specs/<file>.md`](specs/<file>.md)       |
+| **<name>**    | <one line>                | `specs/<file>.md`                          |
 
 ## 3. How it works
 
@@ -52,13 +52,13 @@ explaining the system to a new engineer.>
 
 | Decision          | Why                  | ADR                                       |
 | ----------------- | -------------------- | ----------------------------------------- |
-| <the choice>      | <the reason>         | [ADR-0001](adrs/0001-<slug>.md)           |
+| <the choice>      | <the reason>         | `adrs/0001-<slug>.md`                     |
 
 ## 5. Current state
 
 | Capability   | Status                                | Evidence                                      |
 | ------------ | ------------------------------------- | --------------------------------------------- |
-| <capability> | Implemented / Partial / Design only   | [`reports/<file>.md`](reports/<file>.md)      |
+| <capability> | Implemented / Partial / Design only   | `reports/<file>.md`                           |
 
 <Be exact here. "Partial" with a pointer to what is missing is useful; "Implemented" for
 something only half-wired is the single most expensive kind of documentation error, because

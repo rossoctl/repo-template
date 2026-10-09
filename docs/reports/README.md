@@ -10,7 +10,7 @@ was true when someone ran it. Both are committed, and they are kept separate on 
 
 | Report                                           | Covers                | Spec                                              | Status  |
 | ------------------------------------------------ | --------------------- | ------------------------------------------------- | ------- |
-| [`<topic>-report.md`](<topic>-report.md)         | <what phase/slice>    | [`../specs/<file>.md`](../specs/<file>.md)        | Partial |
+| `<topic>-report.md`                              | <what phase/slice>    | `../specs/<file>.md`                              | Partial |
 
 <!-- One row per report. "Status: Partial" is normal and useful — see below. -->
 
@@ -56,7 +56,7 @@ specific and falsifiable:
 
 Status: Partial <!-- Partial | Complete -->
 Date: YYYY-MM-DD
-Spec: [`../specs/<file>.md`](../specs/<file>.md)
+Spec: `../specs/<file>.md`
 Covers: <which sections/steps of the spec landed>
 ```
 

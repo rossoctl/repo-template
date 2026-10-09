@@ -65,10 +65,7 @@ After creating your repo from this template:
 
 ```sh
 # 1. Replace the placeholders. <PROJECT> is the repo name; <TEAM> the owning GitHub team.
-#    Note the .lychee.toml exclusion: that file lists the placeholders *as* link-check
-#    exclusions (so the shipped templates pass CI). Rewriting it there would silently stop
-#    the link checker from looking at any link containing your project name.
-grep -rl --exclude-dir=.git --exclude=.lychee.toml -e '<PROJECT>' -e '<TEAM>' . \
+grep -rl --exclude-dir=.git -e '<PROJECT>' -e '<TEAM>' . \
   | xargs sed -i '' -e 's|<PROJECT>|myrepo|g' -e 's|<TEAM>|myrepo-maintainers|g'
 # (GNU sed: use `sed -i` without the '' argument)
 
@@ -90,6 +87,11 @@ Then:
 - Add your language's ignores to `.gitignore` and hooks to `.pre-commit-config.yaml` (both
   have a marked section at the end).
 - Replace this README.
+
+Paths inside the templates that are still placeholders (`` `<file>.md` ``, `` `<topic>-report.md` ``)
+are written as **inline code, not links**, so the link checker has nothing unresolvable to
+chase while the template is still a template. Turn them into real markdown links as you fill
+them in — CI then keeps them honest.
 
 ### What the template deliberately leaves out
 

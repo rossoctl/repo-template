@@ -3,7 +3,7 @@
 - **Status:** Proposed <!-- Proposed → Accepted → Superseded by ADR-NNNN / Deprecated -->
 - **Date:** YYYY-MM-DD
 - **Deciders:** <who>
-- **Spec:** [`../specs/YYYY-MM-DD-<topic>-design.md`](../specs/YYYY-MM-DD-<topic>-design.md) <!-- the deep-dive this decision came from; omit if none -->
+- **Spec:** `../specs/YYYY-MM-DD-<topic>-design.md` <!-- make this a real link once filled in; the deep-dive this decision came from, omit if none -->
 
 ## Context
 

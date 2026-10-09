@@ -2,7 +2,7 @@
 
 Status: Partial <!-- Partial | Complete. "Partial" is normal: extend this file as later steps land. -->
 Date: YYYY-MM-DD
-Spec: [`../specs/<file>.md`](../specs/<file>.md)
+Spec: `../specs/<file>.md`  <!-- make this a real link once filled in -->
 Covers: <which sections or steps of the spec actually landed>
 
 > **What this report says in one sentence.** <What was built, and the one result that matters

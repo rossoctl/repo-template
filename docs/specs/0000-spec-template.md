@@ -3,8 +3,8 @@
 Version: 1.0 — <Month Year>
 Status: Proposed <!-- Proposed → Accepted → Implemented → Superseded by <link> / Deprecated -->
 Milestone: **<ID>**, registered in [the registry](README.md)
-Builds on (reuse, no redesign): <[<ID>](<file>.md) (what is reused, one line) — or "nothing">
-Report: <[`../reports/<topic>-report.md`](../reports/<topic>-report.md) — add once the phase lands>
+Builds on (reuse, no redesign): <<ID> (`<file>.md`) — what is reused, one line — or "nothing">
+Report: <`../reports/<topic>-report.md` — make it a real link once the phase lands>
 
 > **The one-sentence thesis.** <The entire design in one sentence, in the active voice. If you
 > cannot write this sentence, the design is not settled — keep designing, don't start writing.>

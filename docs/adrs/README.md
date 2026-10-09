@@ -12,7 +12,7 @@ system rests on.
 
 | #                                    | Decision              | Status   |
 | ------------------------------------ | --------------------- | -------- |
-| [0001](0001-<kebab-title>.md)        | <The decision, as a claim — "Persist session state through a pluggable backend"> | Proposed |
+| `0001-<kebab-title>.md`              | <The decision, as a claim — "Persist session state through a pluggable backend"> | Proposed |
 
 <!-- One row per ADR, in number order. Numbers are permanent and never reused. -->
 

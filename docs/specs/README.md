@@ -11,7 +11,7 @@ filenames are dated and descriptive so they never need renaming when numbering s
 
 | ID  | Title                   | Spec                                                              | Status      | Report |
 | --- | ----------------------- | ----------------------------------------------------------------- | ----------- | ------ |
-| M1  | <first design>          | [`YYYY-MM-DD-<topic>-design.md`](YYYY-MM-DD-<topic>-design.md)    | Proposed    | —      |
+| M1  | <first design>          | `YYYY-MM-DD-<topic>-design.md`                                    | Proposed    | —      |
 
 <!--
 Add a row per spec. Keep the canonical ID here rather than in the filename.
@@ -47,8 +47,8 @@ Every spec opens with this block:
 Version: 1.0 — <Month Year>
 Status: Proposed
 Milestone: **<ID>**, registered in [the registry](README.md)
-Builds on (reuse, no redesign): [<ID>](<file>.md) (<one line on what is reused>)
-Report: [`../reports/<topic>-report.md`](../reports/<topic>-report.md)  <!-- once it exists -->
+Builds on (reuse, no redesign): <ID> (`<file>.md`) (<one line on what is reused>)
+Report: `../reports/<topic>-report.md`  <!-- once it exists -->
 
 > **The one-sentence thesis.** <The whole design in one sentence. If you cannot write it,
 > the design is not settled yet.>
