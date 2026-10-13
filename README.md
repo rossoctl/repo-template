@@ -77,7 +77,21 @@ pre-commit install && pre-commit install --hook-type commit-msg
 
 # 4. Check it all still hangs together.
 ./scripts/check-no-committed-plans.sh && ./scripts/check-doc-headers.sh
+
+# 5. Protect `main`. DO THIS BEFORE THE FIRST PULL REQUEST.
+#    A template copies files, not settings, so `main` starts wide open — which is how
+#    several rossoctl repos ended up merging PRs with nothing required at all.
+./scripts/protect-main.sh                          # one review + DCO
+./scripts/protect-main.sh --checks DCO,lint,test   # once CI exists, require it too
 ```
+
+**Step 5 is the one people skip**, and it is the only step whose absence is invisible:
+nothing fails, PRs just merge unreviewed. `scripts/protect-main.sh --dry-run` prints the
+request without sending it, and `--list-checks` shows what has run recently as a starting
+point — but **only require a check that runs on `pull_request`**. A push- or
+schedule-triggered context never reports on a PR, so the PR waits for it forever. (DCO is
+an org-level app and reports as a status rather than a check-run, so `--list-checks` does
+not show it; require it anyway.)
 
 Then:
 
