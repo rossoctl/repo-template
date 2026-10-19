@@ -87,11 +87,11 @@ pre-commit install && pre-commit install --hook-type commit-msg
 
 **Step 5 is the one people skip**, and it is the only step whose absence is invisible:
 nothing fails, PRs just merge unreviewed. `scripts/protect-main.sh --dry-run` prints the
-request without sending it, and `--list-checks` shows what has run recently as a starting
-point — but **only require a check that runs on `pull_request`**. A push- or
-schedule-triggered context never reports on a PR, so the PR waits for it forever. (DCO is
-an org-level app and reports as a status rather than a check-run, so `--list-checks` does
-not show it; require it anyway.)
+request without sending it, and `--list-checks` shows the contexts seen on both `main` and
+the latest PR as a starting point — but **only require a check that runs on
+`pull_request`**. A push- or schedule-triggered context never reports on a PR, so the PR
+waits for it forever. A context that appears only in the PR column is `pull_request`-
+triggered; one that appears only on `main` is not, and requiring it will wedge every PR.
 
 Then:
 
